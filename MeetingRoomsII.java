@@ -34,7 +34,7 @@ class MeetingRoomsII {
             int[] peek = queue.poll();
             int prevStart = peek[0];
             int prevEnd = peek[1];
-            int curEnd = intervals[1][1];
+            int curEnd = intervals[i][1];
             int curStart = intervals[i][0];
             if (curStart < prevEnd && curStart >= prevStart) {
                 res++;
